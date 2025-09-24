@@ -28,11 +28,12 @@ inputBtn.addEventListener('click', () => {
     
 })
 
-deleteBtn.addEventListener('click', () =>{
-    alert('DOUBLE CLICK TO DELETE')
-})
+
 deleteBtn.addEventListener('dblclick', () => {
-    console.log('Delete btn works')
+    localStorage.clear()
+    myLeads = []
+    renderLeads()
+    
 })
 
 function renderLeads(){
