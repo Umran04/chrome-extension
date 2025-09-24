@@ -5,12 +5,21 @@ let listItems = ''
 
 let myLeads = []
 
+let leadsFromLocalStorage = JSON.parse(localStorage.getItem('myLeads'))
+
+if(leadsFromLocalStorage){
+    myLeads = leadsFromLocalStorage
+    renderLeads
+}
+
 inputBtn.addEventListener('click', () => {
     if(inputEl.value == ''){
         alert('enter a url')
     }else{
         myLeads.push(inputEl.value)
         inputEl.value = ''
+        localStorage.setItem('myLeads', JSON.stringify(myLeads))
+        console.log(localStorage.getItem('myLeads'))
         renderLeads()
     }
     
