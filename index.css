@@ -17,11 +17,11 @@ input{
     padding: 0px 10px;
     box-sizing: border-box;
     margin-bottom: 10px;
-    border: solid 2px #5f9341;
+    border: solid 2px darkgreen;
 }
 
 button{
-    background-color: #5f9341;
+    background-color: darkgreen;
     color: white;
     border: none;
     width: 130px;
@@ -34,10 +34,13 @@ button{
     background-color: white;
     color:#5f9341;
     border: 1px solid #5f9341;
-    font-size: 0.9rem;
-    font-weight: bolder;
-
 }
+
+#tab-btn{
+    background-color: #5f9341;
+}
+
+
 
 .buttons{
     display: flex;
@@ -50,8 +53,7 @@ button:hover{
 }
 
 button:active{
-    background-color: #5f9341;
-    /* box-shadow: 0 5px #666; */
+    background-color: darkgreen;
     transform: translateY(4px);
 }
 
