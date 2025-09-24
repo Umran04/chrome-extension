@@ -1,3 +1,17 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
+import { getDatabase } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-database.js";
+
+const firebaseConfig = {
+    databaseURL:'https://leads-tracker-app-b62d5-default-rtdb.europe-west1.firebasedatabase.app/'
+}
+
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app)
+
+console.log(app)
+console.log(database)
+
+
 const inputBtn = document.getElementById('input-btn')
 const deleteBtn = document.getElementById('delete-btn')
 const tabBtn = document.getElementById('tab-btn')
