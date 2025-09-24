@@ -6,9 +6,13 @@ let listItems = ''
 let myLeads = []
 
 inputBtn.addEventListener('click', () => {
-    myLeads.push('https://' + inputEl.value)
-    inputEl.value = ''
-    renderLeads()
+    if(inputEl.value == ''){
+        alert('enter a url')
+    }else{
+        myLeads.push(inputEl.value)
+        inputEl.value = ''
+        renderLeads()
+    }
     
 })
 
