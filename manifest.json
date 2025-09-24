@@ -6,7 +6,7 @@
         "default_popup":"index.html",
         "default_icon":"dollar.png"
     },
-    "permissons":[
+    "permissions":[
         "tabs"
     ]    
 
