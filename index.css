@@ -30,6 +30,31 @@ button{
     font-size: 0.9rem;
 }
 
+#delete-btn{
+    background-color: white;
+    color:#5f9341;
+    border: 1px solid #5f9341;
+    font-size: 0.9rem;
+    font-weight: bolder;
+
+}
+
+.buttons{
+    display: flex;
+    gap: 15px
+}
+
+button:hover{
+    opacity: 95%;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: #5f9341;
+    /* box-shadow: 0 5px #666; */
+    transform: translateY(4px);
+}
+
 
 
 ul{
